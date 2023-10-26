@@ -13,7 +13,7 @@ Here used are the following regression techniques aavailable from the Sk-Learn l
 - Gradient Boosted Regression
 - Multi-Layer Perceptron Regressor
 
-Roughly 1.5 years of most recent historic data is used with an 80/20 training/test split. Standardisation parameters are obtained over the training set and applied over the test set. Training set outliers are filtered out beyond 2 standard deviations to not train over the extreme price intervals. (Something to include and investigate later) 
+Roughly 1.5 years of most recent historic data is used with an 80/20 training/test split. Standardisation parameters are obtained over the training set and applied over the test set. Training set outliers are filtered out beyond 2 standard deviations to not train over the extreme price intervals. 
  
 
 ToDo:
@@ -24,6 +24,7 @@ ToDo:
 - Perhaps include Pre-Dispatch as part of the prediction
 - Compare performance with/without standardised data
 - Investigate further Hyper-Parameter Optimisation methods
+- Train to predict extreme price intervals / Perhaps as classification problem
 - Compare with different combination of independant variables / breakdown of model over different periods eg. Solar Periods where Solar Irradiance values > 0
   
 Here is the training losses for several MLP regressor variants - useful for observing training progression and sensitivities to parameters and choose better hyperparameters.
