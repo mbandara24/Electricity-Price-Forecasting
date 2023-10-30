@@ -16,16 +16,7 @@ Here used are the following regression techniques aavailable from the Sk-Learn l
 Roughly 1.5 years of most recent historic data is used with an 80/20 training/test split. Standardisation parameters are obtained over the training set and applied over the test set. Training set outliers are filtered out beyond 2 standard deviations to not train over the extreme price intervals. 
  
 
-ToDo:
-- Include error metrics to have quantified overview over model performance (MAE,MSE,MAPE,R2 as well as for specific time periods eg. Hours of day) 
-- Compare also for NSW, SA, QLD, TAS (each have significantly different generation portfolios to Victoria)
-- Compare to AEMO pre-dispatch/forecast on prices and evaluate relative performance 
-- Investigate different combinations of weather input stations used / interpolations of the weather data variables
-- Perhaps include Pre-Dispatch as part of the prediction
-- Compare performance with/without standardised data
-- Investigate further Hyper-Parameter Optimisation methods
-- Train to predict extreme price intervals / Perhaps as classification problem
-- Compare with different combination of independant variables / breakdown of model over different periods eg. Solar Periods where Solar Irradiance values > 0
+
   
 Here is the training losses for several MLP regressor variants - useful for observing training progression and sensitivities to parameters and choose better hyperparameters.
 
@@ -38,3 +29,14 @@ Below are predictions over the test set for the 3 regression techniques and the 
 ![](gbr.png)
 
 ![](mlp.png)
+
+Further exploration to be added over time:
+- Include error metrics to have quantified overview over model performance (MAE,MSE,MAPE,R2 as well as for specific time periods eg. Hours of day) 
+- Compare also for NSW, SA, QLD, TAS (each have significantly different generation portfolios to Victoria)
+- Compare to AEMO pre-dispatch/forecast on prices and evaluate relative performance 
+- Investigate different combinations of weather input stations used / interpolations of the weather data variables
+- Include Pre-Dispatch as part of the prediction
+- Compare performance with/without standardised data
+- Investigate further Hyper-Parameter Optimisation methods
+- Train to predict seperate extreme price intervals / Instead as classification problem?
+- Compare with different combination of independant variables / breakdown of model over different periods eg. Solar Periods where Solar Irradiance values > 0
