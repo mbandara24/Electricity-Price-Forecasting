@@ -30,8 +30,17 @@ Below are predictions over the test set for the 3 regression techniques and the 
 
 ![](mlp.png)
 
+
+Below are examples of error statistical metrics of the model predictions.
+
+![](mae.png)
+
+![](rmse.png)
+
+
 Further exploration to be added over time:
-- Include error metrics to have quantified overview over model performance (MAE,MSE,MAPE,R2 as well as for specific time periods eg. Hours of day) 
+- ~~Include error metrics to have quantified overview over model performance (MAE,MSE,MAPE,R2 as well as for specific time periods eg. Hours of day)~~
+- ~~Include trend/dummy variable as well as seasonal trend variable~~
 - Compare also for NSW, SA, QLD, TAS (each have significantly different generation portfolios to Victoria)
 - Compare to AEMO pre-dispatch/forecast on prices and evaluate relative performance 
 - Investigate different combinations of weather input stations used / interpolations of the weather data variables
