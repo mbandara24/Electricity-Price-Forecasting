@@ -31,7 +31,8 @@ Below are predictions over the test set for the 3 regression techniques and the 
 ![](mlp.png)
 
 
-Below are examples of error statistical metrics of the model predictions.
+Below are box plots showing the error distribution over the test set for each model variant.
+Best result with 75% of predictions having an error less than ~ $36
 
 ![](mae.png)
 
